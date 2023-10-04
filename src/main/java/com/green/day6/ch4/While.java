@@ -2,6 +2,17 @@ package com.green.day6.ch4;
 
 public class While {
     public static void main(String[] args) {
-        //while은 반복문 입니다. ggggggg 원본수정
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("for- " + i);
+        }
+
+        System.out.println("=================");
+
+        int i=0;
+        while(i<10) {
+            System.out.println("while- " + i);  // 아래 i++을 System.out.println("while- " + i++); 뒤로 옮겨도됨
+            i++;
+        }
     }
 }
