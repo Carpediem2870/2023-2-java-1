@@ -21,7 +21,7 @@ public class FlowEx28 {
             } else {
                 System.out.println("정답입니다.");
                 break;
-            } // 테스트ㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㅂㄷㄷㄷㄷㄷ
+            } // 테스트
         }
     }
 }
