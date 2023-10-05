@@ -18,9 +18,10 @@ public class FlowEx28 {
             } else if(input > answer) {
                 System.out.println("Down");
 
-            } else
+            } else {
                 System.out.println("정답입니다.");
-            break;
+                break;
+            }
         }
     }
 }
