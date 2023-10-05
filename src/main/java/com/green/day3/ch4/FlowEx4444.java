@@ -31,9 +31,6 @@ public class FlowEx4444 {
                 } else if (score <= 83) {
                     opt = '-';
                 }
-
-            } else {
-                grade = 'C';
             }
             System.out.printf("당신의 학점은 %c%c입니다.\n", grade, opt);
 
