@@ -16,7 +16,9 @@ public class Array {
         System.out.println("arr[0]: " + arr[0]); // 배열 읽기
         System.out.println("arr[1]: " + arr[1]); // 배열 읽기
         System.out.println("arr[2]: " + arr[2]); // 배열 읽기
-
         System.out.println("arr.length : " + arr.length);  // 배열이 가지고있는 공간 수 = 길이
     }
 }
+
+// arr[0] = 200; 배열 읽기
+// int val = arr[0]; 배열 쓰기

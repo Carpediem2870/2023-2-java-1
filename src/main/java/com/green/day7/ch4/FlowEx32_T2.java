@@ -19,6 +19,8 @@ public class FlowEx32_T2 {
                 System.out.println("메뉴를 잘못 선택 하셨습니다.");
                 continue;
             } System.out.printf("선택하신 메뉴는 %d번 입니다.\n", choice);
+            System.out.printf(choice < 1 || choice >3 ? "선택하신 메뉴는 %d번 입니다." : "메뉴를 잘못 선택 하셨습니다.");
+
         }
         System.out.println("프로그램을 종료합니다.");
     }
