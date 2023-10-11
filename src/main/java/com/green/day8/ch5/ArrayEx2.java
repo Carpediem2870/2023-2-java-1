@@ -9,7 +9,8 @@ public class ArrayEx2 {
         각 방으 ㅣ1~10의 랜덤한 값을 넣어주세요
         */
 
-        int [] aray1 = new int[5];
+
+        int [] aray1 = new int[5]; // 의미가 있는 숫자 = 매직넘버 >> final int LEN = 10; 좌측 본문에 new int[LEN]; 이렇게 사용
         System.out.println(Arrays.toString(aray1));
 
         for (int i = 0; i < aray1.length; i++) {
@@ -17,7 +18,9 @@ public class ArrayEx2 {
             System.out.printf("array[%d] : %d\n",i, aray1[i]);
         }
         System.out.println(Arrays.toString(aray1));
+        System.out.println(aray1.toString());
         System.out.println(aray1);
+
 
     }
 }

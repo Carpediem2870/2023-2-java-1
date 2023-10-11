@@ -5,7 +5,7 @@ public class VarEx2 {
         int x = 10, y = 20;  // x가 20을갖고싶어하고 y가 10을 갖고싶어함
         int c = x;
 
-
+        System.out.printf("");
 
         x=y;
         y=c;

@@ -8,7 +8,6 @@ public class ArrayToStringMissionResult3 {
     public static void main(String[] args) {
 
         int[] arr = {5, 10, 7, 3, 11, 100};
-        int commaLen = arr.length - 1;
         System.out.println(Arrays.toString(arr));
 
 
