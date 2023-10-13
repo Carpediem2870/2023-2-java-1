@@ -1,10 +1,8 @@
 package com.green.연습용;
-
-
-//참조형 매개변수
 class Data {int x;}
 
-    class PrimitiveParamEx {
+
+class PrimitiveParamEx {
         public static void main(String[] args) {
             Data d = new Data();
             d.x = 10;
