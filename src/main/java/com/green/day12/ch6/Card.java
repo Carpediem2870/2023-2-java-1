@@ -1,16 +1,17 @@
 package com.green.day12.ch6;
 
 public class Card {
-    String kind;
-    String number;
+    public String kind;
+    public String number;
 
 
-    int getScore() {
 
-        switch (number){
+    public int getScore() {
+
+        switch (number) {
             case "A":
                 return 1;
-            case"J":
+            case "J":
                 return 11;
             case "Q":
                 return 12;
@@ -21,4 +22,10 @@ public class Card {
 
         return Integer.parseInt(number);
     }
+
+   public void printYourSelf(){
+       System.out.printf("%s - %s\n", kind, number);
+    }
+
+
 }
