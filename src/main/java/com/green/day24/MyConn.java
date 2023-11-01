@@ -1,9 +1,6 @@
 package com.green.day24;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class MyConn {
     private static final String DB_URL = "jdbc:mariadb://localhost:3306/board_ver1";
@@ -25,7 +22,8 @@ public class MyConn {
         System.out.println("접속 성공!!");
         return conn;
     }
-    public static void close(Connection conn, PreparedStatement ps){
+
+    public static void close(Connection conn, PreparedStatement ps) {
         if (ps != null) {
             try {
                 ps.close();
@@ -40,5 +38,18 @@ public class MyConn {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void close(Connection conn, PreparedStatement ps, ResultSet rs) {
+        if (rs != null) {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            close(conn, ps);
+        }
+
+
     }
 }

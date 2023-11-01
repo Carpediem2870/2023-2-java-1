@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Arrays;
+import java.util.List;
 
 public class MyConnTest {
     public static void main(String[] args) {
@@ -46,7 +48,7 @@ class MyConnTest2 {
 class MyConnTest3 {
     public static void main(String[] args) {
         BoardEntity entity = new BoardEntity();
-        entity.setIboard(3);
+        entity.setIboard(4);
 
         int row = BoardDao.delBoard(entity);
         System.out.println(row);
@@ -64,5 +66,25 @@ class MyConnTest4 {
 
         int row = BoardDao.updBoard(entity);
         System.out.println(row);
+    }
+}
+
+class MyConnTest5 {
+    public static void main(String[] args) {
+        List<BoardEntity> list = BoardDao.setBoartList();
+        for (BoardEntity entity : list) {
+            System.out.println(entity);
+            //iboard: 값, title: 값, cnts: 값, writer: 값, createdAt: 값
+        }
+
+    }
+}
+
+class MyConnTest6 {
+    public static void main(String[] args) {
+        BoardEntity result = BoardDao.selBoardById(4);
+        System.out.println(result);
+
+
     }
 }
