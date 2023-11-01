@@ -32,12 +32,37 @@ class MyConnTest2 {
         //ctnts : 처음 작성하는 내용입니다.
         //wirter : 홍길동
         BoardEntity boardEntity = new BoardEntity();
-        boardEntity.setTitle("오늘 Insert배움33");
-        boardEntity.setCtnts("java를 통해 board테이블에 값 넣어봄33");
-        boardEntity.setWriter("신난다33");
+        boardEntity.setTitle("새로운글");
+        boardEntity.setCtnts("몇개만 쓰자");
+        boardEntity.setWriter("어려워ㅜㅜㅜㅜ");
 
         //생성자 BoardEntity2 boardEntity2 = new BoardEntity2("처음 작성2", "처음 작성하는 내용입니다.2", "홍길동2");
 
-    BoardDao.insBoard(boardEntity);
+//    BoardDao.insBoard(boardEntity);
+    int row = BoardDao.insBoard(boardEntity);
+    }
+}
+
+class MyConnTest3 {
+    public static void main(String[] args) {
+        BoardEntity entity = new BoardEntity();
+        entity.setIboard(3);
+
+        int row = BoardDao.delBoard(entity);
+        System.out.println(row);
+
+    }
+}
+
+class MyConnTest4 {
+    public static void main(String[] args) {
+        BoardEntity entity = new BoardEntity();
+        entity.setIboard(4);
+        entity.setTitle("제목 하이");
+        entity.setCtnts("수정내용");
+        entity.setWriter("수정자");
+
+        int row = BoardDao.updBoard(entity);
+        System.out.println(row);
     }
 }
